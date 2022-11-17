@@ -69,12 +69,9 @@ a{
 </style>    
 <script>
     function log(){
-        var x=document.getElementById("Uname").value;
-        var y=document.getElementById("Pass").value;
-        if(x!=""&&y!="")
+       
         alert("Confirm your registration through email");
-        else
-        alert("Please fill your details correctly");
+        
         }
 </script>
 </head>    
@@ -85,24 +82,24 @@ a{
         <label><b>User Name     
         </b>    
         </label>    
-        <input type="text" name="Uname" id="Uname" placeholder="Username" value="">    
+        <input type="text" name="Uname" id="Uname" placeholder="Username" value="" required>    
         <br><br> 
        <label><b>Email     
         </b> &nbsp &nbsp &nbsp &nbsp   
         </label>    
-        <input type="email" name="Email" id="Email" placeholder="Email" value="">    
+        <input type="email" name="Email" id="Email" placeholder="Email" value="" required>    
         <br><br>   
         <label><b>Password     
         </b>    
         </label> <br>   
-        <input type="Password" name="Pass" id="Pass" placeholder="Password" value="">    
+        <input type="Password" name="Pass" id="Pass" placeholder="Password" value="" required>    
         <br><br>    
        <!--     <input type="submit" name="log" id="log" value="Log In Here" onclick="log()">       --> 
         <br><br><br>    
-           
+        <input type="submit" id="log" value="Click to register">  
 
     </form>
-    <button onclick="log()" id="log">Click to register</button>
+    
     
 </div> <pre style="font-size: 15px;"></pre>
 
