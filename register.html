@@ -1,0 +1,103 @@
+<html><head>    
+    <title>register page</title>    
+    <style>
+	body  
+{  
+    
+    background: url('https://assets.embibe.com/production/web-assets/assets/images/ParentLandingPage/parent_bg.jpg');
+    font-family: cursive;  
+}  
+.login{  
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto; 
+        margin-top: -20px;  
+        padding: 80px;  
+        background: #23463f;  
+        border-radius: 15px ;  
+}  
+h2{  
+    text-align: center;  
+    color: #277582;  
+    padding: 20px;  
+}  
+label{  
+    color: #08ffd1;  
+    font-size: 17px;  
+}  
+#Uname{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#Pass{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+#log{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: blue;  
+    position: absolute;
+    margin-left:0.3%;
+    margin-top: -92px;
+}  
+span{  
+    color: white;  
+    font-size: 17px;  
+}  
+a{  
+    float: right;  
+    background-color: grey;  
+}  
+</style>    
+<script>
+    function log(){
+        var x=document.getElementById("Uname").value;
+        var y=document.getElementById("Pass").value;
+        if(x!=""&&y!="")
+        alert("Confirm your registration through email");
+        else
+        alert("Please fill your details correctly");
+        }
+</script>
+</head>    
+<body>    <br><br><br> 
+    <h2>Login Page</h2>
+    <div class="login">    
+    <form>    
+        <label><b>User Name     
+        </b>    
+        </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="Username" value="">    
+        <br><br> 
+       <label><b>Email     
+        </b>    
+        </label>    
+        <input type="email" name="Email" id="Email" placeholder="Email" value="">    
+        <br><br>   
+        <label><b>Password     
+        </b>    
+        </label> <br>   
+        <input type="Password" name="Pass" id="Pass" placeholder="Password" value="">    
+        <br><br>    
+       <!--     <input type="submit" name="log" id="log" value="Log In Here" onclick="log()">       --> 
+        <br><br><br>    
+           
+
+    </form>
+    <button onclick="log()" id="log">Click to register</button>
+    
+</div> <pre style="font-size: 15px;"></pre>
+
+    
+  </body></html>
